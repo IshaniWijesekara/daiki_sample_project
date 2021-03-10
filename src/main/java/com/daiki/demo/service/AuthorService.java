@@ -9,4 +9,10 @@ public interface AuthorService {
     public Author updateAuthor(AuthorDTO authorDTO)throws Exception;
 
     public boolean deleteAuthor(Integer id)throws Exception;
+
+    public AuthorDTO findByName(String name)throws Exception;
+
+    public AuthorDTO findByAddress(String address)throws Exception;
+
+    public AuthorDTO findById(Integer id)throws Exception;
 }
