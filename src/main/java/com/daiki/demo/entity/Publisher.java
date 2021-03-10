@@ -19,6 +19,9 @@ public class Publisher implements Serializable {
     @OneToMany(mappedBy = "publisherId")
     private List<Book> bookList;
 
+    public Publisher() {
+    }
+
     public Publisher(String name, String address, List<Book> bookList) {
         this.name = name;
         this.address = address;
