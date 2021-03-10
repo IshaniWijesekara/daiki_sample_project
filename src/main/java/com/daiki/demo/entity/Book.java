@@ -23,6 +23,9 @@ public class Book implements Serializable {
     @ManyToOne
     private Publisher publisherId;
 
+    public Book() {
+    }
+
     public Book(String name, Double price, Author authorId, Publisher publisherId) {
         this.name = name;
         this.price = price;
